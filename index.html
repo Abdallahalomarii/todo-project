@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-project</title>
+    <link rel="stylesheet" href=".styles/reset.css">
+    <link rel="stylesheet" href="./styles/home.css">
 </head>
 <body>
     <header>
@@ -12,47 +14,49 @@
             <img src="https://to-do-cdn.microsoft.com/static-assets/c87265a87f887380a04cf21925a56539b29364b51ae53e089c3ee2b2180148c6/icons/logo.png" alt="To do list logo" width="50px" height="50px">
             <h1>TODO lists</h1>
         </section>
-        <section>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </section>
+      <div class="pages">
+        <a href="#">Home</a>
+        <a href="./about.html">About</a>
+      </div>
     </header>
     <main>
-        <section>
-            <h3>Table</h3>
+        <section class="container">
+            <h3>To Do List</h3>
             <table border="1px solid">
             <tr>
                 <th>Tasks</th>
                 <th>Status</th>
             </tr>
             <tr>
-                <td>task1</td>
-                <td>Status1</td>
+                <td>Learn HTML 
+                    <input type="checkbox" checked>
+                </td>
+                <td><div class="green"></div></td>
             </tr>
             <tr>
-                <td>task2</td>
-                <td>status2</td>
+                <td>learn CSS
+                    <input type="checkbox" checked>
+
+                </td>
+                <td><div class="green"></div></td>
             </tr>
             <tr>
-                <td>task3</td>
-                <td>status3</td>
+                <td>Learn Javascript
+                    <input type="checkbox">
+
+                </td>
+                <td><div class="red"></div></td>
             </tr>
             
             </table>
         </section>
     </main>
-    <br>
     <footer>
        
         <section>
             <p>
                 &copy; 2023 copy right 
             </p>
-        </section>
-        <section>
-     
         </section>
     </footer>
 </body>
