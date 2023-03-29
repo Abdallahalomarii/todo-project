@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/reset.css">
 </head>
 <body>
     <header>
@@ -12,63 +14,47 @@
             <img src="https://to-do-cdn.microsoft.com/static-assets/c87265a87f887380a04cf21925a56539b29364b51ae53e089c3ee2b2180148c6/icons/logo.png" alt="To do list logo" width="50px" height="50px">
             <h1>TODO lists</h1>
         </section>
-        <section>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </section>
+<div class="pages">
+    <a href="./index.html">Home</a>
+    <a href="#">About</a>
+</div>
     </header>
     <br>
     <br>
     <main>
-        <section>
-            <section>
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Your image" height="50" width="50">
-            </section>
-            <section>
-                <p>
-                    <h3>John</h3>
-                    <h3>45</h3>
-                </p>
+        <div class="container">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Your image" >
+        
+            <div class="innercont">
+                <h1>Abdallah alomari</h1>
+                <h3>23 years old</h3>
+
+               
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi quae ipsum nobis consequatur deleniti illum autem voluptatem eveniet repudiandae. Doloribus quasi </p>
-            </section>
-        </section>
-        <section>
+            </div>
+        </div>
+        <div class="formcontainer">
             <form>
                 <label for="name">Name</label>
-                <input type="text" id="name">
-                <br>
-                <br>
-                <label for="email">email</label>
+                <input type="text" id="name">  
+             <label for="email">email</label>
                 <input type="email" id="email">
-                <br>
-                <br>
                 <label for="message">message</label>
                 <input type="text" id="message">
-                <br>
-                <br>
                 <button>Submit</button>
             </form>
-        </section>
+        </div>
     </main>
     <br>
     <br>
     <footer>
        
-        <section>
+        <section class="mid">
             <p>
                 &copy; 2023 copy right 
             </p>
         </section>
-        <section>
-         <h3><a href="#">contact us</a>
-            </h3>
-         <h5>call us here</h5>
-         <i>+96278548721</i>
-         <br>
-         <i>+96278555478</i>
-        </section>
+
     </footer>
 </body>
 </html>
