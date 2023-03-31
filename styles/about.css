@@ -135,10 +135,11 @@ float: right;
 footer
 {
     background-color: gray;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
     height: auto;
 }
