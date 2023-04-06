@@ -47,31 +47,60 @@ let Course, JavaScript, Programmer;
 let Questionsarray = [];
 
 function PrepCourse() {
-    Course = prompt("Are you enjoying this course?");
-    if (Course === null || Course === undefined || Course === "") {
+    Course = prompt("Are you enjoying this course? (YES/NO)");
+    if (Course.toUpperCase() === "YES" || Course.toUpperCase() === "NO") {
+        return Course;
+    }
+    else if (Course === null || Course === undefined || Course === "") {
         Course = "invalid";
     }
+    else {
+        while (Course.toUpperCase() != "YES" && Course.toUpperCase() != "NO") {
+            alert("Please enter YES or NO");
+            Course = prompt("Are you enjoying this course? (YES/NO)");
+        }
+    }
     return Course;
+
+
 }
 function JavaScriptLanguage() {
-    JavaScript = prompt("Do You Like JavaScript Language");
-    if (JavaScript === null || JavaScript === undefined || JavaScript === "") {
+    JavaScript = prompt("Do You Like JavaScript Language? (YES/NO)");
+    if (JavaScript.toUpperCase() === "YES" || JavaScript.toUpperCase() === "NO") {
+        return JavaScript;
+    }
+    else if (JavaScript === null || JavaScript === undefined || JavaScript === "") {
         JavaScript = "invalid";
+    }
+    else {
+        while (JavaScript.toUpperCase() != "YES" && JavaScript.toUpperCase() != "NO") {
+            alert("Please enter YES or NO");
+            JavaScript = prompt("Do You Like JavaScript Language? (YES/NO)");
+        }
     }
     return JavaScript;
 }
 function Programming() {
-    Programmer = prompt("Would you like to be an a Full-Stack programmer");
-    if (Programmer === null || Programmer === undefined || Programmer === "") {
+    Programmer = prompt("Would you like to be an a Full-Stack programmer? (YES/NO)");
+    if (Programmer.toUpperCase === "YES" || Programmer.toUpperCase === "NO") {
+        return Programmer;
+    }
+    else if (Programmer === null || Programmer === undefined || Programmer === "") {
         Programmer = "invalid";
+    }
+    else {
+        while (Programmer.toUpperCase() != "YES" && Programmer.toUpperCase() != "NO") {
+            alert("Please enter YES or NO");
+            Programmer = prompt("Would you like to be an a Full-Stack programmer? (YES/NO)");
+        }
     }
     return Programmer;
 }
+
 function PushArray(array) {
-    array.push(Course);
-    array.push(JavaScript);
-    array.push(Programmer);
+    array.push(Course, JavaScript, Programmer);
 }
+
 function PrintArray(array) {
     for (let i = 0; i <= array.length; i++) {
 
@@ -83,7 +112,6 @@ EnterName();
 EnterGender();
 EnterAge();
 
-alert("You have three questions to answer with only with Yes/No")
 PrepCourse();
 JavaScriptLanguage();
 Programming();
